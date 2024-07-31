@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Торты",
+    "link": "#cakes"
+  },
+  {
+    "title": "Капкейки",
+    "link": "#cupcakes"
+  },
+  {
+    "title": "Чизкейки",
+    "link": "#cheesecakes"
+  },
+  {
+    "title": "О кондитере",
+    "link": "#about"
+  },
+  {
+    "title": "Заказать",
+    "link": "#order"
+  },
+  {
+    "title": "Вопрос-ответ",
+    "link": "#faq"
+  },
+  {
+    "title": "Контакты",
+    "link": "#contacts"
+  }
+]
