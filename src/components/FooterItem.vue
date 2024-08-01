@@ -12,5 +12,3 @@ import NavigationMenu from '@/components/NavigationMenu.vue';
         </div>
     </footer>
 </template>
-
-<style scoped></style>

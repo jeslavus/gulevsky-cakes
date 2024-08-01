@@ -9,5 +9,3 @@ import NavigationMenu from '@/components/NavigationMenu.vue';
     </div>
   </header>
 </template>
-
-<style scoped></style>

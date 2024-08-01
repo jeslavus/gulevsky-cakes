@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, useRoute } from 'vue-router';
-import headerMenu from '../json/header_menu.json';
-import contacts from '../json/contacts.json';
+import headerMenu from '@/json/header_menu.json';
+import contacts from '@/json/contacts.json';
 import LogoSVG from '@/assets/svg/LogoSVG.vue';
 import Telegram from '@/assets/svg/Telegram.vue';
 import { computed } from 'vue';
@@ -52,3 +52,26 @@ const isHomePage = computed((): boolean => route.path === '/');
         </ul>
     </nav>
 </template>
+
+<style scoped lang="sass">
+.classic_nav 
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    .classic_fix_menu 
+        display: flex
+        align-items: center
+        gap: 32px
+
+        a
+            color: #32292F
+            font-family: Gilroy
+            font-size: 16px
+            font-style: normal
+            font-weight: 400
+            line-height: 150%
+
+            &:hover
+                color: #C44536
+</style>
