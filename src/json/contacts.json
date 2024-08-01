@@ -10,6 +10,10 @@
   },
   {
     "type": "whatsapp",
-    "link": "https://t.me/gulevsky_sergey"
+    "link": "https://api.whatsapp.com/send?phone=79042828533"
+  },
+  {
+    "type": "VK",
+    "link": "https://vk.com/gulevsky48"
   }
 ]

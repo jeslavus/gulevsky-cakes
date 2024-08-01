@@ -10,6 +10,11 @@ body {
     background: #F0EADC;
 }
 
+* {
+    box-sizing: border-box;
+    transition-duration: 0.5s;
+}
+
 #app {
     min-height: 100%;
     display: flex;
@@ -46,4 +51,17 @@ a {
     display: flex;
     align-items: center;
     gap: 32px;
+}
+
+.classic_nav a {
+    color: #32292F;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.classic_nav a:hover {
+    color: #C44536;
 }
