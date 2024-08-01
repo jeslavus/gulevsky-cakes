@@ -1,7 +1,39 @@
+<script setup lang="ts">
+import { ref, onMounted } from 'vue';
+import work_process from '../json/work_process.json';
+
+const svgComponents = ref<Record<string, any>>({});
+
+onMounted(async () => {
+    try {
+        const imports: Promise<void>[] = work_process.list.map(async item => {
+            const module: any = await import(`@/assets/svg/${item.svg}.vue`);
+            svgComponents.value[item.svg] = module.default;
+        });
+        await Promise.all(imports);
+    } catch (error) {
+        console.error('Error loading SVG components:', error);
+    }
+});
+</script>
+
 <template>
     <section id="work_process">
         <div class="container">
-            <h1>Процесс изготовления</h1>
+            <h2>{{ work_process.title }}</h2>
+            <ul class="work_process_list reset_ul">
+                <li class="work_process_item" v-for="item in work_process.list" :key="item.title">
+                    <figure>
+                        <component :is="svgComponents[item.svg]" />
+                        <figcaption>
+                            <h3>{{ item.title }}</h3>
+                            <p>{{ item.text }}</p>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
         </div>
     </section>
 </template>
+
+<style scoped></style>
