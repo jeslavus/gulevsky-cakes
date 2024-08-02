@@ -2,7 +2,7 @@
     <section id="about">
         <div class="container">
             <figure>
-                <img src="/src/assets/images/sergey.jpg" alt="Серый">
+                <img src="/public/images/sergey.jpg" alt="Серый">
                 <figcaption>
                     <h2 class="small_title">О кондитере</h2>
                     <h3 class="big_title">Привет, меня зовут<br>Сергей Гулевский</h3>

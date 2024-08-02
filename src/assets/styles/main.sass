@@ -1,34 +1,35 @@
+$black: #32292F
+$white: #fff
+$burgundy: #C44536
+$light_pink: #DA9789
+$light_beige: #F0EADC
+
 @font-face
     font-family: 'Gilroy'
-    src: url('./src/fonts/gilroy/Gilroy-Regular.ttf') format('truetype')
+    src: url('../src/fonts/gilroy/Gilroy-Regular.ttf') format('truetype')
     font-weight: 400
     font-style: normal
 
 @font-face
     font-family: 'Gilroy'
-    src: url('./src/fonts/gilroy/Gilroy-Bold.ttf') format('truetype')
+    src: url('../src/fonts/gilroy/Gilroy-Bold.ttf') format('truetype')
     font-weight: 700
     font-style: normal
 
 @font-face
     font-family: 'Prata'
-    src: url('./src/fonts/prata/Prata-Regular.ttf') format('truetype')
+    src: url('../src/fonts/prata/Prata-Regular.ttf') format('truetype')
     font-weight: 400
     font-style: normal
-    box-sizing: border-box
-    transition-duration: 0.5s
 
 *
-    box-sizing: border-box
     transition-duration: 0.5s
 
 html
-    scroll-behavior: smooth
     height: 100%
 
     body
         height: 100%
-        overflow-x: hidden
         background: #F0EADC
 
         #app
@@ -36,44 +37,107 @@ html
             display: flex
             flex-direction: column
 
+            section
+                padding: 1rem 0
+
+            button,
+            a
+                cursor: pointer
+
+            details
+                &::-webkit-details-marker
+                    display: none
+
+            summary
+                cursor: pointer
+                list-style: none
+
+            figure
+                margin: 0
+
+            .red_btn
+                background: $burgundy
+                padding: 1rem 4rem
+                color: #fff
+                text-transform: uppercase
+                font-weight: 700
+                font-family: Gilroy
+                line-height: 150%
+                letter-spacing: 1.6px
+                border: 1px solid $burgundy
+
+                &:hover
+                    background: #fff
+                    color: $burgundy
+
+            .small_h2
+                color: $light_pink
+                text-align: center
+                font-family: Gilroy
+                font-size: 1rem
+                font-style: normal
+                font-weight: 400
+                line-height: 150%
+                letter-spacing: 1.6px
+                text-transform: uppercase
+                margin: 0
+
+            .big_title
+                color: $burgundy
+                font-variant-numeric: lining-nums tabular-nums
+                font-family: Prata
+                font-size: 2rem
+                font-weight: 400
+                margin-top: 0
+
+            .small_title
+                color: $burgundy
+                font-variant-numeric: lining-nums tabular-nums
+                font-family: Prata
+                font-size: 1.25rem
+                font-weight: 400
+
             .container
-                max-width: 1340px
+                max-width: 77.5rem
                 position: relative
                 margin: 0 auto
 
-            .reset_ul
-                margin: 0
-                padding: 0
-                list-style-type: none
+            address
+                font-style: normal
 
             a
                 text-decoration: none
 
+            .reset_ul
+                padding: 0
+                margin: 0
+                list-style-type: none
+
+            .classic_btn_link
+                color: $white
+                text-align: center
+                font-family: Gilroy, sans-serif
+                text-transform: uppercase
+                font-weight: 700
+                padding: 1rem 4rem
+                text-decoration: none
+                border: 1px solid $burgundy
+                background: $burgundy
+                transition-duration: 0.75s
+                cursor: pointer
+
+                &:hover
+                    color: $burgundy
+                    background: $white
+
             main
                 flex: 1 1 auto
 
-                figure
-                    margin: 0
+                section
+                    margin-top: 50px
 
-                details
-                    cursor: pointer
-
-                    summary
-                        list-style: none
-
-                .small_title
-                    color: #DA9789
-                    font-family: Gilroy
-                    font-size: 16px
-                    font-style: normal
-                    font-weight: 400
-                    line-height: 150%
-                    letter-spacing: 1.6px
-                    text-transform: uppercase
-
-                .big_title
-                    color: #C44536
-                    font-variant-numeric: lining-nums tabular-nums
-                    font-family: Prata
-                    font-size: 32px
-                    font-weight: 400
+                    h1
+                        font-size: 4rem
+                        color: $black
+                        font-weight: 700
+                        font-family: Gilroy, sans-serif

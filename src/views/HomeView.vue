@@ -6,6 +6,7 @@ import WorkProcess from '@/components/WorkProcess.vue';
 import Banner from '../components/Banner.vue';
 import Reviews from '@/components/Reviews.vue';
 import FAQ from '@/components/FAQ.vue';
+import ContactForm from '@/components/ContactForm.vue';
 import SecondContactForm from '@/components/SecondContactForm.vue';
 import Contacts from '@/components/Contacts.vue';
 </script>
